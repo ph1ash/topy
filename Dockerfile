@@ -7,6 +7,10 @@ RUN apt-get update; \
                        gcc \
                        vim \
                        libgl1-mesa-glx \
+                       libglu1-mesa \
+                       libsm6 \
+                       libxtst6 \
+                       libxt6 \
                        git; \
     wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh; \
     chmod +x Miniconda2-latest-Linux-x86_64.sh; \
