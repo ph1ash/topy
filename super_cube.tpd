@@ -1,0 +1,30 @@
+[ToPy Problem Definition File v2007]
+
+PROB_TYPE:   comp
+PROB_NAME:   super_cube
+ETA:         exp
+DOF_PN:      3
+VOL_FRAC:    0.15
+FILT_RAD:    1.8 # > sqrt(3)
+ELEM_K:      H8
+NUM_ELEM_X:  50
+NUM_ELEM_Y:  50
+NUM_ELEM_Z:  50
+FXTR_NODE_Z: 1; 51; 132601; 132651
+LOAD_NODE_Z: 131350
+LOAD_VALU_Z: -1
+
+NUM_ITER:    50
+
+# Grey-scale filter (GSF)
+P_FAC      : 1
+P_HOLD     : 15  # num of iters to hold p constant from start
+P_INCR     : 0.2  # increment by this amount
+P_CON      : 1  # increment every 'P_CON' iters
+P_MAX      : 3  # max value of 'P_CON'
+
+Q_FAC      : 1
+Q_HOLD     : 15  # num of iters to hold q constant from start
+Q_INCR     : 0.05  # increment by this amount
+Q_CON      : 1  # increment every 'Q_CON' iters
+Q_MAX      : 5  # max value of 'Q_CON'
