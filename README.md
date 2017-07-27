@@ -6,9 +6,11 @@ If you are interested in playing around with ToPy, it can be a bit tricky (and t
 
 To run the file and get things configured, you will need Docker installed on your computer already.  Once you have Docker installed, follow these steps to get a Docker container built up which will function as a ToPy development environment.
 
-* <code>git clone https://github.com/ph1ash/topy_playground.git</code>
-* <code>cd topy_playground</code>
-* <code>docker build -t topy_env:latest .</code>
+```
+git clone https://github.com/ph1ash/topy_playground.git
+cd topy_playground
+docker build -t topy_env:latest .
+```
 
 Once the build command has finished, just run <code>docker run -it topy_env</code> and you will log in (attach) to your newly created topy_env container!
 
