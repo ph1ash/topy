@@ -27,7 +27,9 @@ RUN apt-get update; \
     mkdir /projects; \
     cd /projects; \
     git clone https://github.com/williamhunter/topy; \
-    cd topy/topy; \
+    cd topy/ ; \
+    git clone https://github.com/ph1ash/topy_playground.git; \
+    cd topy/; \
     python setup.py install; \
     git clone https://github.com/PythonOptimizers/pysparse.git; \
     cd pysparse; \
