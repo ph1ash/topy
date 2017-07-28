@@ -6,7 +6,6 @@ If you are interested in playing around with ToPy, it can be a bit tricky (and t
 
 ### Install Info
 To generate a new ToPy development environment, you will need <a href="https://www.docker.com/get-docker">Docker</a> installed on your computer. Once you have Docker installed, enter the following commands in a terminal to get a Docker image built up.
-
 ```
 git clone https://github.com/ph1ash/topy_playground.git
 cd topy_playground
@@ -15,7 +14,6 @@ docker build -t topy_env:latest .
 <b><u>Do note</u></b> that if you have the slightest inclination that visualization could be used at some point, continue on to "Viewing VTKs \<your host OS>". Otherwise, if you simply wish to have an environment to generate VTKs without the need for visualization, just run <code>docker run -it topy_env</code> and you will connect to your newly created topy_env container. 
 
 ### Viewing VTKs in Linux
-<i>You may need to execute the following shell script using <code>sudo</code> for a container to be generated successfully depending on how Docker was installed.</i>
 
 ```
 cd topy_playground
